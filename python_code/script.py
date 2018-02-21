@@ -133,3 +133,31 @@
 # 	return sum
 
 # print(sum_all(1, 2, 3, 5))
+
+# l1 = ('a', 1, 'c')
+# l2 = [1, 2, 3]
+# print(zip(l1, l2))
+# for pair in zip(l1, l2):
+# 	print(pair)
+
+# d = {1: 'a', 2: 'b', 3: 'c'}
+# print(d.items())
+
+# d = dict(zip('abc', (1, 2, 3)))
+# print(d)
+
+# import random	
+# l = [1, 2, 4]
+# for i in range(10):
+# 	x = random.choice(l)
+# 	print(x)
+
+# str = ' pham duc   hien '
+# print(str.split())
+
+import os
+cmd = 'ls -l'
+fp = os.popen(cmd)
+res = fp.read()
+fp.close()
+print(res)
