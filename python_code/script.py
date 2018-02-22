@@ -210,3 +210,11 @@
 # c.setAttr(200)       # again call parent's method
 # c.getAttr()          # again call parent's method
 
+class Time:
+	__hour = 'Hien'
+
+	def __init__(self, hour):
+		self.__hour = hour
+
+time = Time(10)
+print(Time._Time__hour)
