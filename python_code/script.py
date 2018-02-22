@@ -155,9 +155,58 @@
 # str = ' pham duc   hien '
 # print(str.split())
 
-import os
-cmd = 'ls -l'
-fp = os.popen(cmd)
-res = fp.read()
-fp.close()
-print(res)
+# import os
+# cmd = 'ls -l'
+# fp = os.popen(cmd)
+# res = fp.read()
+# fp.close()
+# print(res)
+
+#Chapter15: Classes and Objects
+
+# class Time:
+	
+# 	def __init__(self):
+# 		self.hour = 0
+# 		self.minute = 0
+# 		self.second = 0
+	
+# time1 = Time()
+# time1.hour = 10
+# time1.minute = 11
+# time1.second = 12
+
+# def print_time(time):
+# 	print('{:02d}: {:02d}: {:02d}\n'.format(
+# 		time.hour, time.minute, time.second)
+# 	)
+
+# print_time(time1)
+
+# class Parent:        # define parent class
+#    parentAttr = 100
+#    def __init__(self):
+#       print ("Calling parent constructor")
+
+#    def parentMethod(self):
+#       print ('Calling parent method')
+
+#    def setAttr(self, attr):
+#       Parent.parentAttr = attr
+
+#    def getAttr(self):
+#       print ("Parent attribute :", Parent.parentAttr)
+
+# class Child(Parent): # define child class
+#    def __init__(self):
+#       print ("Calling child constructor")
+
+#    def childMethod(self):
+#       print ('Calling child method')
+
+# c = Child()          # instance of child
+# c.childMethod()      # child calls its method
+# c.parentMethod()     # calls parent's method
+# c.setAttr(200)       # again call parent's method
+# c.getAttr()          # again call parent's method
+
